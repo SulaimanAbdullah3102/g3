@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+/* shared style */
+
+.section-writing h1 {
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+.section-writing h3 {
+    color: rgb(19, 19, 19);
+    font-family: Work Sans;
+    font-size: 2.81rem;
+    font-weight: 700;
+    line-height: 53px;
+}
+
+.section-writing h4 {
+    color: rgb(19, 19, 19);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px;
+}
+
+.section-writing p {
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.btn-primary {
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    padding: 21px 25px;
+    color: rgb(255, 255, 255);
+    font-family: Work Sans;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 23px;
+    border: none;
+    cursor: pointer;
+}
+
+/* header style start */
+
+header {
+    background: rgba(255, 144, 14, 0.1);
+}
+
+/* nav style */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+
+nav h3 {
+    color: rgb(19, 19, 19);
+    font-size: 2.81rem;
+    font-weight: 700;
+    line-height: 53px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 50px;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+nav,
+
+/* banner style start */
+
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.banner-writing {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-writing h1 {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.banner-writing p {
+    margin-bottom: 32px;
+}
+
+.banner-pic {
+    max-width: 1440px;
+    padding-bottom: 45px;
+}
+
+.banner-pic img {
+    width: 100%;
+}
+
+/* banner style end */
+
+/* header style end */
+
+/* main  style start */
+
+/* feature style start */
+
+.feature-section {
+    margin-top: 130px;
+    max-width: 1440px;
+    padding: 0px 40px;
+    display: flex;
+    margin: 0 auto;
+    gap: 70px;
+}
+
+.feaeture-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.feature-writing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-writing h3 {
+    margin-bottom: 24px;
+}
+
+.feature-writing p {
+    margin-bottom: 32px;
+}
+
+#feature-heading-style-1 {
+    color: rgb(114, 114, 114);
+    font-size: 500;
+}
+
+#feature-heading-style-2 {
+    color: rgb(255, 144, 14);
+}
+
+/* feature style end */
+
+/* feature2 style start */
+
+.feature2-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 130px;
+}
+
+
+.feature2-writing h3{
+    border-left: 2px solid rgb(255, 144, 14);
+    padding-left: 21px;
+    margin-bottom: 24px;
+}
+
+.feature2-writing p{
+    margin-bottom: 30px;
+}
+
+.feature-card{
+    max-width:586px ;
+    padding: 30px 42px 30px 30px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+
+.feature2-pic{
+    flex: 1;
+}
+
+.feature2-pic img{
+    width: 100%;
+    height: 100%;
+}
+
+/* feature2 style end */
+
+
+
+/* main  style end */
+
+
+@media only screen and (max-width: 576px) {
+
+    nav,
+    .feature-section,
+    .feature2-section {
+        flex-direction: column;
+    }
+
+    .feaeture-img {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+    }
+    
+    .feature-section {
+        text-align: center;
+    }
+
+    .feature2-pic{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .feature2-pic img{
+        width: 90%;
+        height: 90%;
+
+    }
+
+}
