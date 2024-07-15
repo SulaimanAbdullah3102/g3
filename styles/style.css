@@ -177,7 +177,7 @@ nav,
 
 /* feature2 style start */
 
-.feature2-section{
+.feature2-section {
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
@@ -185,33 +185,33 @@ nav,
     gap: 146px;
 }
 
-.feature2-writing{
+.feature2-writing {
     padding-top: 50px;
 }
 
-.feature2-writing h3{
+.feature2-writing h3 {
     border-left: 2px solid rgb(255, 144, 14);
     padding-left: 21px;
     margin-bottom: 24px;
 }
 
-.feature2-writing p{
+.feature2-writing p {
     margin-bottom: 30px;
 }
 
-.feature-card{
-    max-width:586px ;
+.feature-card {
+    max-width: 586px;
     padding: 30px 42px 30px 30px;
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
 }
 
 
-.feature2-pic img{
+.feature2-pic img {
     width: 100%;
     height: 90%;
 }
 
-#img-btn{
+#img-btn {
     border-radius: 8px;
     background: rgb(255, 144, 14);
     padding: 46px;
@@ -230,7 +230,29 @@ nav,
 
 /* facts style start */
 
+.facts-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 168px;
+}
+
+.facts-cardbox {
+    margin-top: 100px;
+    display: flex;
+    gap: 125px;
+    justify-content: space-around;
+}
+
+.facts-card {
+    text-align: center;
+    border: 1px solid rgb(255, 144, 14,0.5);
+    border-radius: 8px;
+    padding: 45px 36px 60px;
+}
+
 /* facts style end */
+
+/*  */
 
 
 /* main  style end */
@@ -240,7 +262,8 @@ nav,
 
     nav,
     .feature-section,
-    .feature2-section {
+    .feature2-section,
+    .facts-cardbox {
         flex-direction: column;
     }
 
@@ -248,25 +271,31 @@ nav,
         grid-template-columns: repeat(1, 1fr);
         margin: 0 auto;
     }
-    
-    .feature-section {
+
+    .feature-section,
+    .facts-writing {
         text-align: center;
     }
 
-    .feature2-pic{
+    .feature2-pic {
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .feature2-pic img{
+    .feature2-pic img {
         width: 90%;
         height: 90%;
 
     }
 
-    #img-btn{
+    #img-btn {
         display: none;
+    }
+
+    .facts-cardbox{
+        margin-top: 0px;
+        gap: 0px;
     }
 
 }
