@@ -252,6 +252,27 @@ nav,
 
 /* facts style end */
 
+/* sponsor style start */
+
+.sponsor-section{
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 180px;
+    text-align: center;
+}
+
+.sponsor-cardbox{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sponsor-card img{
+    filter: grayscale(100%);
+}
+
+/* sponsor style end */
+
 /*  */
 
 
@@ -263,7 +284,8 @@ nav,
     nav,
     .feature-section,
     .feature2-section,
-    .facts-cardbox {
+    .facts-cardbox,
+    .sponsor-cardbox {
         flex-direction: column;
     }
 
@@ -298,4 +320,8 @@ nav,
         gap: 0px;
     }
 
+    .sponsor-cardbox {
+        gap: 80px;
+    }
+    
 }
