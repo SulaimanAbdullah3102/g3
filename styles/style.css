@@ -304,6 +304,10 @@ padding-bottom: 40px;
         flex-direction: column;
     }
 
+    nav ul{
+        padding-left: 50px;
+    }
+
     .feaeture-img {
         grid-template-columns: repeat(1, 1fr);
         margin: 0 auto;
