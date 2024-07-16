@@ -30,7 +30,7 @@ body {
 
 .section-writing h4 {
     color: rgb(19, 19, 19);
-    font-size: 20px;
+    font-size: 1.2rem;
     font-weight: 600;
     line-height: 23px;
 }
@@ -71,12 +71,7 @@ nav {
     padding-top: 50px;
 }
 
-nav h3 {
-    color: rgb(19, 19, 19);
-    font-size: 2.81rem;
-    font-weight: 700;
-    line-height: 53px;
-}
+
 
 nav ul {
     display: flex;
@@ -166,7 +161,7 @@ nav,
 
 #feature-heading-style-1 {
     color: rgb(114, 114, 114);
-    font-size: 500;
+    font-weight: 500;
 }
 
 #feature-heading-style-2 {
@@ -245,7 +240,7 @@ nav,
 
 .facts-card {
     text-align: center;
-    border: 1px solid rgb(255, 144, 14,0.5);
+    border: 1px solid rgb(255, 144, 14, 0.5);
     border-radius: 8px;
     padding: 45px 36px 60px;
 }
@@ -254,29 +249,48 @@ nav,
 
 /* sponsor style start */
 
-.sponsor-section{
+.sponsor-section {
     max-width: 1440px;
     margin: 0 auto;
     margin-top: 180px;
     text-align: center;
 }
 
-.sponsor-cardbox{
+.sponsor-cardbox {
     margin-top: 50px;
     display: flex;
     justify-content: space-around;
 }
 
-.sponsor-card img{
+.sponsor-card img {
     filter: grayscale(100%);
 }
 
 /* sponsor style end */
 
-/*  */
-
-
 /* main  style end */
+
+/* footer style start */
+
+footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 130px;
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+}
+
+footer p{
+    color: rgb(66, 66, 66);
+font-size: 1.2rem;
+font-weight: 400;
+line-height: 23px;
+text-align: center;
+padding-top: 40px;
+padding-bottom: 40px;
+}
+
+/* footer style end */
 
 
 @media only screen and (max-width: 576px) {
@@ -315,7 +329,7 @@ nav,
         display: none;
     }
 
-    .facts-cardbox{
+    .facts-cardbox {
         margin-top: 0px;
         gap: 0px;
     }
@@ -323,5 +337,5 @@ nav,
     .sponsor-cardbox {
         gap: 80px;
     }
-    
+
 }
